@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreetReach | About</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #002855;
+      --accent: #f6c700;
+      --bg: #f6f9ff;
+      --white: #ffffff;
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: #333;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 2.5rem 1rem 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: dropFade 0.5s ease-in;
+    }
+
+    @keyframes dropFade {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header img {
+      height: 100px;
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 960px;
+      margin: 4rem auto;
+      padding: 2.5rem;
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      color: var(--primary);
+      margin-bottom: 2rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+
+    .values {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .value {
+      background: var(--bg);
+      border-radius: 10px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+
+    .value h3 {
+      color: var(--primary);
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    .carousel {
+      margin-top: 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .testimonial {
+      background: var(--bg);
+      border-left: 5px solid var(--primary);
+      padding: 1.5rem 2rem;
+      border-radius: 10px;
+      font-style: italic;
+      display: none;
+      transition: opacity 0.5s ease;
+      touch-action: pan-y;
+    }
+
+    .testimonial.active {
+      display: block;
+    }
+
+    .testimonial strong {
+      display: block;
+      margin-top: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      text-align: right;
+      color: var(--primary);
+    }
+
+    .carousel-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .carousel-buttons button {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 36px;
+      height: 36px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .carousel-buttons button:hover {
+      background: #004b99;
+    }
+
+    .timeline {
+      margin-top: 4rem;
+      border-left: 3px solid var(--primary);
+      padding-left: 1.5rem;
+    }
+
+    .event {
+      margin-bottom: 2rem;
+    }
+
+    .event h4 {
+      margin: 0;
+      color: var(--primary);
+      font-size: 1.2rem;
+    }
+
+    .event p {
+      margin: 0.3rem 0 0;
+    }
+
+    .closing {
+      margin-top: 3rem;
+      text-align: center;
+      font-weight: 600;
+      font-size: 1.15rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="StreetReach Logo">
+    <h1>StreetReach</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="get-hired.html">Get Hired</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>About StreetReach</h2>
+    <p><strong>StreetReach</strong> is a lean, student-run flyer distribution company focused on one goal: helping small businesses in Acton get seen. We operate with speed, precision, and local knowledge — powered by high school students who care about real results.</p>
+
+    <p>Flyer marketing may seem old-school, but when it's targeted and personal, it performs. According to a <a href="https://thedma.org" target="_blank">2023 DMA report</a>, direct mail gets a <strong>4.4%</strong> response rate, outperforming both email and paid search. A <a href="https://www.marketreach.co.uk" target="_blank">Royal Mail study</a> found <strong>89%</strong> of people remember receiving a flyer — and nearly half keep it.</p>
+
+    <p>In June 2025, we ran a 3-week trial in Bangalore with <strong>3 local clients</strong>. Each paid ₹6,000–₹9,000 (~<strong>$70–$105</strong>) for targeted flyer drops in high-traffic areas. The campaign generated over <strong>₹25,000</strong> (~<strong>$300</strong>) in total revenue, boosting local awareness and foot traffic for every client.</p>
+
+    <div class="values">
+      <div class="value">
+        <h3>Local-first</h3>
+        <p>We only serve businesses based in or around Acton.</p>
+      </div>
+      <div class="value">
+        <h3>Human delivery</h3>
+        <p>No bots. No dumping. We hand-deliver to real doorsteps.</p>
+      </div>
+      <div class="value">
+        <h3>Student-powered</h3>
+        <p>Our team is made of motivated local teens earning real cash.</p>
+      </div>
+    </div>
+
+    <div class="carousel">
+      <div class="testimonial active">
+        “We used StreetReach to promote our mobile accessory store and got 7 new walk-ins within two days. Fantastic experience — will definitely use it again.”
+        <strong>Aryan, Bengaluru Accessories</strong>
+      </div>
+      <div class="testimonial">
+        “StreetReach helped us drive awareness and foot traffic for our boutique cafe. They’re fast, organized, and affordable.”
+        <strong>Priya, Brew & Bloom</strong>
+      </div>
+      <div class="testimonial">
+        “Reliable, efficient, and driven — StreetReach is everything a local business needs.”
+        <strong>Shreya, The Book Cove</strong>
+      </div>
+      <div class="carousel-buttons">
+        <button onclick="prevTestimonial()">&#8592;</button>
+        <button onclick="nextTestimonial()">&#8594;</button>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="event">
+        <h4>June 2025</h4>
+        <p>Ran our pilot campaign in Bangalore with 3 businesses and earned ₹25,000 in revenue.</p>
+      </div>
+      <div class="event">
+        <h4>July 2025</h4>
+        <p>Preparing to launch StreetReach in Acton, Massachusetts with upgraded branding and local targeting.</p>
+      </div>
+      <div class="event">
+        <h4>Fall 2025</h4>
+        <p>Goal: Hire 5+ student distributors and scale to 15+ campaigns across Acton and nearby areas.</p>
+      </div>
+    </div>
+
+    <p class="closing">Want to make a loud impact in your neighborhood? Visit our <a href="contact.html">Contact</a> page to get started today.</p>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      window.scrollTo(0, 0);
+    });
+
+    let current = 0;
+    const testimonials = document.querySelectorAll('.testimonial');
+
+    function showTestimonial(index) {
+      testimonials.forEach((el, i) => el.classList.toggle('active', i === index));
+    }
+
+    function nextTestimonial() {
+      current = (current + 1) % testimonials.length;
+      showTestimonial(current);
+    }
+
+    function prevTestimonial() {
+      current = (current - 1 + testimonials.length) % testimonials.length;
+      showTestimonial(current);
+    }
+
+    let startX = 0;
+    let endX = 0;
+    const carousel = document.querySelector('.carousel');
+
+    carousel.addEventListener('touchstart', (e) => startX = e.touches[0].clientX);
+    carousel.addEventListener('touchend', (e) => {
+      endX = e.changedTouches[0].clientX;
+      if (startX - endX > 50) nextTestimonial();
+      if (endX - startX > 50) prevTestimonial();
+    });
+
+    setInterval(nextTestimonial, 6000);
+  </script>
+</body>
+</html>

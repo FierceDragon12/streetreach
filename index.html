@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StreetReach | Dominate Acton</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #002855;
+      --accent: #f6c700;
+      --bg: #f6f9ff;
+      --white: #ffffff;
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: #333;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: var(--white);
+      padding: 2.5rem 1rem 2rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      animation: dropFade 0.5s ease-in;
+    }
+
+    @keyframes dropFade {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    header img {
+      height: 100px;
+      margin-bottom: 0.5rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--white);
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: 960px;
+      margin: 4rem auto;
+      padding: 2.5rem;
+      background: var(--white);
+      border-radius: var(--radius);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+      animation: fadeIn 0.8s ease-in-out;
+      text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h2 {
+      font-size: 2.4rem;
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      font-weight: 800;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: #444;
+      margin-bottom: 2.5rem;
+    }
+
+    .cta-btn {
+      display: inline-block;
+      margin: 1rem;
+      padding: 0.8rem 1.8rem;
+      background-color: var(--primary);
+      color: var(--white);
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: #004b99;
+    }
+
+    .card {
+      background: var(--bg);
+      padding: 2rem;
+      border-radius: 15px;
+      margin-top: 2rem;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      background-color: #eef4ff;
+    }
+
+    .card h3 {
+      color: var(--primary);
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .scarcity {
+      margin-top: 3rem;
+      background: #fff7d6;
+      border-left: 5px solid var(--accent);
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      font-weight: 600;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="StreetReach Logo">
+    <h1>StreetReach</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="get-hired.html">Get Hired</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Dominate Acton, One Flyer at a Time.</h2>
+    <p class="tagline">Premium local marketing for small businesses — fast, focused, and done right.</p>
+
+    <a href="contact.html" class="cta-btn">Book a Campaign</a>
+    <a href="about.html" class="cta-btn">Why StreetReach Works</a>
+
+    <div class="card">
+      <h3>Get Hired</h3>
+      <p>Motivated student? Join our team, walk or bike, and earn doing high-impact local delivery work.</p>
+      <a class="cta-btn" href="get-hired.html">Apply Now</a>
+    </div>
+
+    <div class="card">
+      <h3>Promote Your Business</h3>
+      <p>Run a shop, service, or cafe in Acton? Let us deliver your brand directly to your neighborhood.</p>
+      <a class="cta-btn" href="contact.html">Start Your Campaign</a>
+    </div>
+
+    <div class="card">
+      <h3>Why It Works</h3>
+      <p>Learn why local flyer distribution still outperforms online ads — especially when done right.</p>
+      <a class="cta-btn" href="about.html">See the Proof</a>
+    </div>
+
+    <div class="scarcity">
+      Now booking July 15–30 campaigns. Limited slots available. First come, first served.
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      window.scrollTo(0, 0);
+    });
+  </script>
+</body>
+</html>
